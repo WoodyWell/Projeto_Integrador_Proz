@@ -29,7 +29,9 @@
                     <span id="num1"></span> + 
                     <span id="num2"></span> = 
                     <input type="text" id="result">
-                  <button id="submit">enviar</button>
+                    <button id="submit">enviar</button>
+                    <br>
+                    <span id="msg_tela"></span>
                 </div>
                 <script>
                     window.onload = function() {
@@ -41,9 +43,9 @@
                     document.getElementById("submit").onclick = function() {
                         var result = document.getElementById("result").value;
                         if (result == num1 + num2) {
-                        alert("verificado com sucesso!");
+                            document.getElementById("msg_tela").innerHTML ="verificado com sucesso!";
                         } else {
-                        alert("captcha incorreto. Favor verificar novamente!");
+                            document.getElementById("msg_tela").innerHTML ="captcha incorreto. Favor verificar novamente!";
                         }
                     };
                     };
