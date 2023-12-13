@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <link rel="stylesheet" href="style.css">
+</script>
+</head>
+<body>
+    <header>
+        <nav class="nav_cabeçalho">
+            <img class="logo" src="img/Logo_svg/4.svg" width="150px" alt="Reciclar Faz Bem">
+            <ul class="nav_list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Como descartar?</a></li>
+                <li><a href="pag_03_locais.html">Pontos de Entrega</a></li>
+                <li><a href="pag_04_sobre.html">Sobre o Projeto</a></li>
+                <li><a href="pag_05_01_login.html">Login</a></li>
+                <li><a href="pag_06_Cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        </script>
+        <div style="text-align:center">
+            <h1>Tela de Login</h1> 
+                <form >     
+                        <div>
+                            <label>Usuário:</label>
+                            <input type="text" placeholder="digite seu nome" name="username" required>
+                        </div>
+                        <div>
+                            <label>Senha:</label> 
+                            <input type="password" placeholder="digite sua senha" name="password" required>
+                        </div>
+
+                        <!-- início da área do captcha -->
+                        <p>Escreva o resultado da equação:</p>
+                        <div id="captcha">
+                            <span id="num1"></span> + 
+                            <span id="num2"></span> = 
+                            <input type="number" id="result">
+                            <button id="submit">enviar</button>
+                            <br>
+                            <span id="msg_tela"></span>
+                        </div>
+                        <script>
+                            window.onload = function() {
+                            var num1 = Math.floor(Math.random() * 10 + 1);
+                            var num2 = Math.floor(Math.random() * 10 + 1);
+                            document.getElementById("num1").innerHTML = num1;
+                            document.getElementById("num2").innerHTML = num2;
+
+                            document.getElementById("submit").onclick = function() {
+                                var result = document.getElementById("result").value;
+                                if (result == num1 + num2) {
+                                    document.getElementById("msg_tela").innerHTML ="verificado com sucesso!";
+                                } else {
+                                    document.getElementById("msg_tela").innerHTML ="captcha incorreto. Favor verificar novamente!";
+                                }
+                            };
+                            };
+                        </script>
+                        <!-- fim da área do captcha-->
+
+                        <div>
+                            <button type="submit">Entrar</button>
+                        </div>  
+                        <div>   
+                            <button type="button" class="cancelbtn"> Cancelar</button>   
+                        </div> 
+                        <div>
+                        <a href="pag_05_02_recuperarSenha.html">Esqueceu a senha?</a>
+                        </div>
+                        <div>
+                            <p><strong>Login com Google:</strong></p>
+                            <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&hl=pt-BR&ifkv=ASKXGp1lh1NXpiYoFQ8DUuECyNcxzaNVY80PP5XqK7AtUBqVcpitEcF1HvA44cZgYYVxoPfMkN7vhg&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S453252180%3A1702265445384342&theme=glif"><img src="img/LOGIN_GOOGLE.png" alt="LOGIN_GOOGLE" width="40" height="40"></a>
+                        </div>
+                        <div>   
+                            <p> Cadastrar novo usuário? <a href="pag_06_Cadastro.html"> Clique aqui! </a> </p> 
+                        </div>
+                </form>  
+        </div>
+    </main>
+
+    <footer>
+        <nav class="nav_rodape">
+            <img src="img/Logo_svg/4.svg" width="100" alt="Reciclar Faz Bem">
+            <h6 class="nav_h6">Reciclar Faz Bem. &copy; Todos os direitos reservados.</h6>
+        </nav>
+    </footer>
+</body>
+</html>
