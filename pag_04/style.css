@@ -67,3 +67,42 @@ nav:after {
     text-decoration: none;
     transition: .5s;
 }
+
+.caixa1{
+    border: 2px solid black;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+
+    margin-top: 40px;
+    margin-right: 60px;    
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+.caixa2{
+    border: 2px solid black;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+
+    margin-top: 40px;
+    margin-right: 60px;    
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+.caixa3{
+    border: 2px solid black;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+
+    margin-top: 40px;
+    margin-right: 60px;    
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
