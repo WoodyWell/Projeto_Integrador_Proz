@@ -3,3 +3,4 @@ Testando Commit na Branch Wellington.
 Testando Commit na Branch Eliakim (nova)
 Testando Commit na Branch Alex.
 Testando novo commit na Branch Wellington...
+Testando Commit na Branch Antony.
