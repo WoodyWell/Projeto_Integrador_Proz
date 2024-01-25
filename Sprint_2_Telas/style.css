@@ -27,10 +27,10 @@ a:hover {
 }
 
 main {
-    background: url(img/backgrund/background_png.png) no-repeat
+    background: url(img/backgrund/background_png.png);
     center center;
     background-size: cover;
-    height: 92vh;
+    height: fit-content
 }
 
 /*Barra de navegação superior*/
@@ -67,7 +67,8 @@ main {
         top: 8vh;
         right: 0;
         width: 50vw;
-        height: 92vh;
+        height: 100%;
+        border-radius: 10px;
         background: rgb(7, 56, 7);
         flex-direction: column;
         align-items: center;
@@ -81,6 +82,12 @@ main {
     }
     .mobile_menu {
         display: block;
+    }
+
+    #ranking img {
+        border-radius: 10px;
+        margin-right: 0px;
+        width: 200px;
     }
 }
 
@@ -106,6 +113,11 @@ main {
 
 /*Rodapé*/
 
+footer {
+    bottom: 0px;
+
+}
+
 .nav_rodape h6 {
     color: #fff;
     text-align: center;
@@ -122,6 +134,7 @@ main {
     background-color: rgb(7, 56, 7);
     height: 8vh;
 }
+
 
 /*Estilização página sobre o projeto*/
 
@@ -178,6 +191,7 @@ main {
     margin: auto;
     border-radius: 10px;
     width: 100%;
+    justify-content: center;
 }
 
 #botoes_main_banner {
@@ -216,6 +230,7 @@ main {
     width: 50%;
     padding: 10px;
     margin: 10px;
+    height: fit-content;
     text-align: center;
     h2 {
         font-size: larger;
@@ -231,4 +246,32 @@ main {
             color: white;
         }
     }
+}
+
+.conteudo_meio {
+    display: flex;
+    margin: 10px;
+}
+
+#ranking img {
+    border-radius: 10px;
+    margin-right: 0px;
+}
+
+.conteudo_textual {
+    padding: 10px;
+}
+
+.conteudo_textual h2 {
+    margin-top: 0px;
+    margin: 10px;
+    font-size: 40px;
+}
+
+.conteudo_textual p {
+    text-align: justify;
+    margin: 10px;
+    padding-right: 10px;
+    text-indent: 3ch;
+
 }
