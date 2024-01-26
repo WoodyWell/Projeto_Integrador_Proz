@@ -113,13 +113,22 @@ ul {
     margin-right: 60px;    
     margin-bottom: 40px;
     margin-left: 20px;
+    
 }
 
 .caixa3 div{
     display: flex;
     align-items:center;
     justify-content:space-around;
+    font-family: 'Poiret One', sans-serif;
+    font-weight: 600;
+    font-size:2rem;
 
+}
+
+body div h3{
+    color:black;
+    font-family: 'Poiret One', sans-serif;
 }
 
 .nav_rodape {
