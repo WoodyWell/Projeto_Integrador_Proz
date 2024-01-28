@@ -30,28 +30,25 @@
     </header>
 
     <main>
-        <section class="conteudo_principal">
-            </script>
-            <div style="text-align:center">
-                <h1>Tela de Login</h1> 
-                    <form >     
+    </script>
+        <section class="login">
+            <div>
+                <form >     
+                        <h1>Tela de Login</h1> 
                             <div>
-                                <label>Usuário:</label>
-                                <input type="text" placeholder="digite seu nome" name="username" required>
+                                <label>Usuário:</label><br>
+                                <input type="text" placeholder="digite seu nome" name="username" required><br>
                             </div>
                             <div>
-                                <label>Senha:</label> 
-                                <input type="password" placeholder="digite sua senha" name="password" required>
+                                <label>Senha:</label> <br>
+                                <input type="password" placeholder="digite sua senha" name="password" required><br>
                             </div>
 
                             <!-- início da área do captcha -->
                             <p>Escreva o resultado da equação:</p>
                             <div id="captcha">
-                                <span id="num1"></span> + 
-                                <span id="num2"></span> = 
-                                <input type="number" id="result">
+                                <span id="num1"></span> + <span id="num2"></span> = <input type="number" id="result">
                                 <button id="submit">enviar</button>
-                                <br>
                                 <span id="msg_tela"></span>
                             </div>
                             <script>
@@ -70,18 +67,13 @@
                                     }
                                 };
                                 };
-                            </script>
+                            </script><br>
                             <!-- fim da área do captcha-->
 
-                            <div>
-                                <button type="submit">Entrar</button>
-                            </div>  
-                            <div>   
-                                <button type="button" class="cancelbtn"> Cancelar</button>   
-                            </div> 
-                            <div>
+                            <button class="btn_login" type="submit">Entrar</button>
+                            <button class="btn_login" type="button"> Cancelar</button>   
                             <a href="pag_05_02_recuperarSenha.html">Esqueceu a senha?</a>
-                            </div>
+
                             <div>
                                 <p><strong>Login com Google:</strong></p>
                                 <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&hl=pt-BR&ifkv=ASKXGp1lh1NXpiYoFQ8DUuECyNcxzaNVY80PP5XqK7AtUBqVcpitEcF1HvA44cZgYYVxoPfMkN7vhg&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S453252180%3A1702265445384342&theme=glif"><img src="img/LOGIN_GOOGLE.png" alt="LOGIN_GOOGLE" width="40" height="40"></a>

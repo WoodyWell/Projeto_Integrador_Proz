@@ -143,7 +143,10 @@ main {
 /*Rodapé*/
 
 footer {
-    bottom: 0px;
+    /* bottom: 0px; */
+   
+   
+    
 
 }
 
@@ -171,59 +174,6 @@ footer {
 
 /*Estilização página sobre o projeto*/
 
-.caixa1{
-    display: block;
-    color: black;
-    border: 2px solid black;
-    padding-top: 20px;
-    padding-right: 40px;
-    padding-bottom: 60px;
-    padding-left: 40px;
-
-    margin-top: 40px;
-    margin-right: 60px;    
-    margin-bottom: 40px;
-    margin-left: 20px;
-}
-
-.caixa1 div{
-    color: black;
-    display:flex;
-}
-
-.caixa2{
-    display: block;
-    color: black;
-    border: 2px solid black;
-    padding-top: 20px;
-    padding-right: 40px;
-    padding-bottom: 60px;
-    padding-left: 40px;
-
-    margin-top: 40px;
-    margin-right: 60px;    
-    margin-bottom: 40px;
-    margin-left: 20px;
-}
-
-.caixa2 div{
-    color: black;
-    display:flex;
-
-}
-
-.caixa3{
-    border: 2px solid black;
-    padding-top: 20px;
-    padding-right: 40px;
-    padding-bottom: 60px;
-    padding-left: 40px;
-
-    margin-top: 40px;
-    margin-right: 60px;    
-    margin-bottom: 40px;
-    margin-left: 20px;
-}
 
 .conteudo_principal {
     background-color: white;
@@ -379,7 +329,56 @@ footer {
     margin-bottom: 0px;
     align-items: center;
     #conteudo_3_1{
-        display: block;
+    display: block;
         margin: 10px;
     }
+}
+
+/* ------------------------- Tela cadastro ----------------------------- */
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        color: black;
+        align-self: center;
+    }
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: lightgray;
+    border-radius: 16px;
+    padding: 1.5rem 40px;
+  }
+
+.btn_cadastro {
+    width: 100px;
+    height: 40px;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    align-self: center;
+}
+
+/* ------------------------- Tela login ----------------------------- */
+
+.login{
+    display: flex;    
+    justify-content: center;
+
+}
+
+.btn_login{
+    display: flex;    
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    margin-top: .5rem;
+    font-size: 1rem;
+    align-self: center;
+    
+
 }
