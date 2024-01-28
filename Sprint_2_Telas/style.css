@@ -359,18 +359,3 @@ footer {
         margin: 10px;
     }
 }
-
-.mapa iframe {
-    border-radius: 10px;
-}
-
-#mini_banner_entrega img {
-    border-radius: 10px;
-}
-
-#botoes_mapa {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 10px;
-    padding: 8px;
-}
