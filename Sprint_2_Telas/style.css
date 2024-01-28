@@ -19,7 +19,7 @@ a:hover {
 .nav_cabeçalho {
     color: #fff;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background-color: rgb(7, 56, 7);
@@ -28,7 +28,6 @@ a:hover {
 
 main {
     background: url(img/backgrund/background_png.png);
-    center center;
     background-size: cover;
     height: fit-content
 }
@@ -38,6 +37,7 @@ main {
 .nav_list {
     list-style: none;
     display: flex;
+    align-items: center;
 }
 
 .nav_list li {
@@ -84,11 +84,10 @@ main {
         display: block;
     }
 
-    #ranking img {
-        border-radius: 10px;
-        margin-right: 0px;
-        width: 200px;
+    .aside_ranking{
+        display: none;
     }
+
 }
 
 .nav_list.active {
@@ -110,6 +109,31 @@ main {
 .nav_list a {
     color: #fff;
 }
+
+#botao_login {
+    margin: auto;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: medium;
+    background-color: rgb(59, 185, 0);
+    a {
+        color: white;
+    }
+}
+
+#botao_cadastro {
+    margin: auto;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: medium;
+    background-color: rgb(59, 185, 0);
+    a {
+        color: white;
+    }
+}
+
 
 /*Rodapé*/
 
@@ -213,8 +237,9 @@ footer {
     }
     #botao_1_1 {
         margin: 10px;
-        padding: 5px;
+        padding: 8px;
         border-radius: 5px;
+        border: none;
         font-size: medium;
         background-color: rgb(59, 185, 0);
         a {
@@ -238,8 +263,9 @@ footer {
     }
     #botao_1_2 {
         margin: 10px;
-        padding: 5px;
+        padding: 8px;
         border-radius: 5px;
+        border: none;
         font-size: medium;
         background-color: rgb(7, 56, 7);
         a {
@@ -248,14 +274,32 @@ footer {
     }
 }
 
+/* Color Theme Swatches in Hex */
+.Spring-Gardens-1-hex { color: #211508; }
+.Spring-Gardens-2-hex { color: #381E10; }
+.Spring-Gardens-3-hex { color: #459451; }
+.Spring-Gardens-4-hex { color: #9FDB43; }
+.Spring-Gardens-5-hex { color: #C4FF6E; }
+
 .conteudo_meio {
     display: flex;
     margin: 10px;
 }
 
-#ranking img {
+#ranking_aside {
+    margin-bottom: 10px;
+}
+
+#banner_aside {
+    margin-bottom: 10px;
+}
+
+#ranking_aside img {
     border-radius: 10px;
-    margin-right: 0px;
+}
+
+#banner_aside img {
+    border-radius: 10px;
 }
 
 .conteudo_textual {
@@ -265,13 +309,53 @@ footer {
 .conteudo_textual h2 {
     margin-top: 0px;
     margin: 10px;
-    font-size: 40px;
+    font-size: 200%;
+    color: #381E10;
+    text-align: center;
 }
 
 .conteudo_textual p {
     text-align: justify;
     margin: 10px;
-    padding-right: 10px;
     text-indent: 3ch;
+    font-size: 100%;
+}
 
+#conteudo_1{
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-items: center;
+    #conteudo_1_1{
+        display: block;
+        margin: 10px;
+    }
+}
+
+#conteudo_2{
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-items: center;
+    #conteudo_2_1{
+        display: block;
+        margin: 10px;
+    }
+}
+
+#conteudo_3{
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-items: center;
+    #conteudo_3_1{
+        display: block;
+        margin: 10px;
+    }
 }
