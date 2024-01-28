@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/*Configurações gerais da página*/
+/* ------------------------- Configurações gerais da página ----------------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -32,7 +32,24 @@ main {
     height: fit-content
 }
 
-/*Barra de navegação superior*/
+/* ------------------------- Paleta de cores ----------------------------- */
+
+/* Color Theme Swatches in Hex */
+.Spring-Gardens-1-hex { color: #211508; }
+.Spring-Gardens-2-hex { color: #381E10; }
+.Spring-Gardens-3-hex { color: #459451; }
+.Spring-Gardens-4-hex { color: #9FDB43; }
+.Spring-Gardens-5-hex { color: #C4FF6E; }
+
+/*
+verde 1 #E3F2AC
+verde 2 #B7D984
+verde 3 #7CC529
+verde 4 #538C51
+verde 5 #517360
+*/
+
+/* ------------------------- Barra de navegação superior responsiva ----------------------------- */
 
 .nav_list {
     list-style: none;
@@ -134,8 +151,7 @@ main {
     }
 }
 
-
-/*Rodapé*/
+/* ------------------------- Rodapé ----------------------------- */
 
 footer {
     bottom: 0px;
@@ -159,47 +175,7 @@ footer {
     height: 8vh;
 }
 
-
-/*Estilização página sobre o projeto*/
-
-.caixa1{
-    border: 2px solid black;
-    padding-top: 20px;
-    padding-right: 40px;
-    padding-bottom: 60px;
-    padding-left: 40px;
-
-    margin-top: 40px;
-    margin-right: 60px;    
-    margin-bottom: 40px;
-    margin-left: 20px;
-}
-
-.caixa2{
-    border: 2px solid black;
-    padding-top: 20px;
-    padding-right: 40px;
-    padding-bottom: 60px;
-    padding-left: 40px;
-
-    margin-top: 40px;
-    margin-right: 60px;    
-    margin-bottom: 40px;
-    margin-left: 20px;
-}
-
-.caixa3{
-    border: 2px solid black;
-    padding-top: 20px;
-    padding-right: 40px;
-    padding-bottom: 60px;
-    padding-left: 40px;
-
-    margin-top: 40px;
-    margin-right: 60px;    
-    margin-bottom: 40px;
-    margin-left: 20px;
-}
+/* ------------------------- Página index ----------------------------- */
 
 .conteudo_principal {
     background-color: white;
@@ -274,13 +250,6 @@ footer {
     }
 }
 
-/* Color Theme Swatches in Hex */
-.Spring-Gardens-1-hex { color: #211508; }
-.Spring-Gardens-2-hex { color: #381E10; }
-.Spring-Gardens-3-hex { color: #459451; }
-.Spring-Gardens-4-hex { color: #9FDB43; }
-.Spring-Gardens-5-hex { color: #C4FF6E; }
-
 .conteudo_meio {
     display: flex;
     margin: 10px;
@@ -296,10 +265,12 @@ footer {
 
 #ranking_aside img {
     border-radius: 10px;
+    box-shadow: 3px 3px 10px #517360;
 }
 
 #banner_aside img {
     border-radius: 10px;
+    box-shadow: 3px 3px 10px #517360;
 }
 
 .conteudo_textual {
@@ -319,6 +290,9 @@ footer {
     margin: 10px;
     text-indent: 3ch;
     font-size: 100%;
+    a {
+        color: green;
+    }
 }
 
 #conteudo_1{
@@ -360,6 +334,8 @@ footer {
     }
 }
 
+/* ------------------------- Página locais de entrega ----------------------------- */
+
 .mapa iframe {
     border-radius: 10px;
 }
@@ -370,9 +346,57 @@ footer {
 
 #botoes_mapa {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 10px;
     padding: 8px;
+}
+
+#botao_localizacao {
+    margin: auto;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    width: fit-content;
+    font-size: medium;
+    background-color: #517360;
+    color: white;
+    box-shadow: 3px 3px 10px #517360;
+}
+
+#pesquisa_endereco {
+    display: flex;
+    margin: auto;
+    padding-left: 8px;
+    border-radius: 5px;
+    border: none;
+    width: fit-content;
+    font-size: medium;
+    background-color: #517360;
+    color: white;
+    box-shadow: 3px 3px 10px #517360;
+    justify-content: space-evenly;
+    align-items: center;
+    input {
+        padding: 10px;
+        margin-left: 10px;
+        border: none;
+        width: 200px;
+        margin-right: 0px;
+    }
+}
+
+#botao_buscar {
+    margin-left: 0px;
+    padding: 8px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    width: fit-content;
+    font-size: medium;
+    background-color: rgb(59, 185, 0);
+    color: white;
 }
 
 /* ------------------------- Tela cadastro ----------------------------- */
@@ -386,7 +410,16 @@ footer {
     }
 }
 
-form {
+#form_login {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: lightgray;
+    border-radius: 16px;
+    padding: 1.5rem 40px;
+  }
+
+  #form_cadastro {
     display: flex;
     flex-direction: column;
     width: 300px;
