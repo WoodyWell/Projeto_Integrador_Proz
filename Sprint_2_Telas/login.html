@@ -28,23 +28,22 @@
             </ul>
         </nav>
     </header>
-
-    <main>
-    </script>
+    <main id="main_login">
         <section class="login">
-            <div>
                 <form id="form_login">
-                        <h1>Tela de Login</h1> 
-                            <div>
-                                <label>Usuário:</label><br>
-                                <input type="text" placeholder="digite seu nome" name="username" required><br>
-                            </div>
-                            <div>
-                                <label>Senha:</label> <br>
-                                <input type="password" placeholder="digite sua senha" name="password" required><br>
-                            </div>
-
-                            <!-- início da área do captcha -->
+                    <h1>Login</h1> 
+                        <div id="usuario_login">
+                            <label><strong>Usuário</strong></label>
+                            <input type="text" placeholder="Digite o seu usuário" name="username" required>
+                        </div>
+                        <div id="senha_login">
+                            <label><strong>Senha</strong></label>
+                            <input type="password" placeholder="Digite a sua senha" name="password" required>
+                            <a href="recuperar_senha.html">Esqueceu a senha?</a>
+                        </div>
+                            
+                            <!--
+                            
                             <p>Escreva o resultado da equação:</p>
                             <div id="captcha">
                                 <span id="num1"></span> + <span id="num2"></span> = <input type="number" id="result">
@@ -68,24 +67,21 @@
                                 };
                                 };
                             </script><br>
-                            <!-- fim da área do captcha-->
-
-                            <button class="btn_login" type="submit">Entrar</button>
-                            <button class="btn_login" type="button"> Cancelar</button>   
-                            <a href="pag_05_02_recuperarSenha.html">Esqueceu a senha?</a>
-
-                            <div>
-                                <p><strong>Login com Google:</strong></p>
-                                <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&hl=pt-BR&ifkv=ASKXGp1lh1NXpiYoFQ8DUuECyNcxzaNVY80PP5XqK7AtUBqVcpitEcF1HvA44cZgYYVxoPfMkN7vhg&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S453252180%3A1702265445384342&theme=glif"><img src="img/LOGIN_GOOGLE.png" alt="LOGIN_GOOGLE" width="40" height="40"></a>
-                            </div>
-                            <div>   
-                                <p> Cadastrar novo usuário? <a href="pag_06_Cadastro.html"> Clique aqui! </a> </p> 
-                            </div>
-                    </form>  
-            </div>
+                        
+                            -->
+                        <button class="btn_login" type="submit">Entrar</button>
+                        <!--
+                            <div id="login_google">
+                            <p><strong>Login com Google</strong></p>
+                            <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&hl=pt-BR&ifkv=ASKXGp1lh1NXpiYoFQ8DUuECyNcxzaNVY80PP5XqK7AtUBqVcpitEcF1HvA44cZgYYVxoPfMkN7vhg&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S453252180%3A1702265445384342&theme=glif"><img src="img/LOGIN_GOOGLE.png" alt="LOGIN_GOOGLE" width="40" height="40"></a>
+                        </div>
+                        -->
+                        <div id="sem_cadastro">   
+                            <p>Não possui cadastro?<a href="pag_06_Cadastro.html"> Cadastre-se</a></p> 
+                        </div>
+                </form>  
         </section>
     </main>
-
     <footer>
         <nav class="nav_rodape">
             <img src="img/Logo_svg/4.svg" width="100" alt="Reciclar Faz Bem">

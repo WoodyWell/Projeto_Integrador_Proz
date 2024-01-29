@@ -417,15 +417,6 @@ footer {
     }
 }
 
-#form_login {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    background-color: lightgray;
-    border-radius: 16px;
-    padding: 1.5rem 40px;
-  }
-
   #form_cadastro {
     display: flex;
     flex-direction: column;
@@ -445,20 +436,68 @@ footer {
 
 /* ------------------------- Tela login ----------------------------- */
 
-.login{
-    display: flex;    
-    justify-content: center;
+#form_login {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 3px 3px 10px #517360;
+    padding: 1.5rem 40px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    margin-left: 200px;
+    h1 {
+        font-size: 200%;
+        margin: 10px;
+        color: #381E10;
+    }
+
+    label {
+        color: #381E10;
+    }
+
+    input {
+        padding: 10px;
+        width: 250px;
+    }
+
+    div {
+        margin: 10px;
+    }
+  }
+
+
+  #main_login {
+    background: url(img/conteudo_login/background_login.png);
+    background-size: cover;
+    height: fit-content;
 }
 
-.btn_login{
-    display: flex;    
+.login{
+    display: flex;
+    justify-content: left;
+}
+
+.btn_login{  
     justify-content: center;
     width: 100px;
-    height: 30px;
+    height: 35px;
     margin-top: .5rem;
     font-size: 1rem;
     align-self: center;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: green;
 }
+
+#sem_cadastro {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
 
 /* ------------------------- Como descartar? ----------------------------- */
 
