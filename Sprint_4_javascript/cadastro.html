@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="nav_cabeçalho">
+            <a href="index.html"><img class="logo" src="img/Logo_svg/4.svg" width="150px" alt="Reciclar Faz Bem"></a>
+            <div class="mobile_menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav_list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="como_descartar.html">Como descartar?</a></li>
+                <li><a href="locais_de_entrega.html">Pontos de Entrega</a></li>
+                <li><a href="sobre_o_projeto.html">Sobre o Projeto</a></li>
+                <li><button id="botao_login"><a href="login.html">Login</a></button></li>
+                <li><button id="botao_cadastro"><a href="cadastro.html">Cadastre-se</a></button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="cadastro">
+            <form id="form_cadastro">
+                <h1>Cadastro do Usuário</h1>
+                <label>Nome:</label>
+                    <input type="text" placeholder="primeiro nome" name="username" required>
+                
+                    <label>Sobrenome:</label>
+                    <input type="text" placeholder="último nome" name="lastname" required>
+                
+                    <label>Data de Nascimento:</label>
+                    <input type="date" placeholder="dd/mm/aaaa" name="nascimento">
+                
+                    <label>Endereço:</label>
+                    <input type="text" placeholder="logradouro(Ex.: Rua, AV.)" name="endereco" required>
+                
+                    <label>Número:</label>
+                    <input type="number" placeholder="Ex.: 123" name="numero" required>
+                
+                    <label>Bairro:</label>
+                    <input type="text" placeholder="digite seu nome" name="username" required>
+                
+                    <label>Cidade:</label>
+                    <input type="text" placeholder="digite seu nome" name="username" required>
+                
+                    <label>Email:</label>
+                    <input type="email" placeholder="digite seu email" name="email" required>
+                
+                    <label>Senha:</label>
+                    <input type="password" placeholder="digite sua senha" name="password" required>
+                
+                    <button class="btn_cadastro"><a href="pag_05_01_login.html">Cadastrar</a></button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <nav class="nav_rodape">
+            <img src="img/Logo_svg/4.svg" width="100" alt="Reciclar Faz Bem">
+            <h6 class="nav_h6">Reciclar Faz Bem. &copy; Todos os direitos reservados.</h6>
+        </nav>
+    </footer>
+</body>
+</html>
