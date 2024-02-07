@@ -4,7 +4,11 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+body {
+    background-image: linear-gradient(to bottom, #ffffff, #EFE6CD);
 }
 
 a {
@@ -13,41 +17,67 @@ a {
 }
 
 a:hover {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .nav_cabeçalho {
-    color: #fff;
+    color: #EFE6CD;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: rgb(7, 56, 7);
-    height: 8vh;
+    background-color: #7D8758;
+    height: 6vh;
 }
 
-main {
-    background: url(img/backgrund/background_png.png);
-    background-size: cover;
-    height: fit-content;
+.nav_principal {
+    color: #EFE6CD;
+    background-color: #EFE6CD;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 9vh;
+}
+
+#botao_login {
+    margin: 8px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: medium;
+    background-color: #9EA58D;
+    a {
+        color: white;
+    }
+}
+
+#botao_cadastro {
+    margin: 8px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: medium;
+    background-color: #C5B67B;
+    a {
+        color: white;
+    }
 }
 
 /* ------------------------- Paleta de cores ----------------------------- */
 
-/* Color Theme Swatches in Hex */
+/* Antiga paleta de cores */
 .Spring-Gardens-1-hex { color: #211508; }
 .Spring-Gardens-2-hex { color: #381E10; }
 .Spring-Gardens-3-hex { color: #459451; }
 .Spring-Gardens-4-hex { color: #9FDB43; }
 .Spring-Gardens-5-hex { color: #C4FF6E; }
 
-/*
-verde 1 #E3F2AC
-verde 2 #B7D984
-verde 3 #7CC529
-verde 4 #538C51
-verde 5 #517360
-*/
+/* Nova paleta de cores */
+.Vintage-Cremes--Greens-1-hex { color: #9EA58D; }
+.Vintage-Cremes--Greens-2-hex { color: #CCC098; }
+.Vintage-Cremes--Greens-3-hex { color: #EFE6CD; }
+.Vintage-Cremes--Greens-4-hex { color: #7D8758; }
+.Vintage-Cremes--Greens-5-hex { color: #C5B67B; }
 
 /* ------------------------- Barra de navegação superior responsiva ----------------------------- */
 
@@ -86,7 +116,7 @@ verde 5 #517360
         width: 50vw;
         height: 100%;
         border-radius: 10px;
-        background: rgb(7, 56, 7);
+        background: #7D8758;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
@@ -135,30 +165,6 @@ verde 5 #517360
     color: #fff;
 }
 
-#botao_login {
-    margin: auto;
-    padding: 8px;
-    border-radius: 5px;
-    border: none;
-    font-size: medium;
-    background-color: rgb(59, 185, 0);
-    a {
-        color: white;
-    }
-}
-
-#botao_cadastro {
-    margin: auto;
-    padding: 8px;
-    border-radius: 5px;
-    border: none;
-    font-size: medium;
-    background-color: rgb(59, 185, 0);
-    a {
-        color: white;
-    }
-}
-
 /* ------------------------- Rodapé ----------------------------- */
 
 footer {
@@ -166,7 +172,7 @@ footer {
 }
 
 .nav_rodape h6 {
-    color: #fff;
+    color: #EFE6CD;
     text-align: center;
     letter-spacing: 1px;
     margin-left: 32px;
@@ -178,17 +184,17 @@ footer {
     justify-content: center;
     align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: rgb(7, 56, 7);
+    background-color: #7D8758;
     height: 8vh;
 }
 
 /* ------------------------- Página index ----------------------------- */
 
 .conteudo_principal {
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 5px 5px 15px #16042e9c;
-    width: 70%;
+    box-shadow: 5px 5px 15px #EFE6CD;
+    width: 80%;
     padding: 10px;
     margin: auto;
 }
@@ -469,7 +475,7 @@ footer {
 
 
   #main_login {
-    background: url(img/conteudo_login/background_login.png);
+    background: url(/Sprint_4_javascript/img/conteudo_login/background_login.png);
     background-size: cover;
     height: fit-content;
 }
