@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -33,38 +34,45 @@
         </nav>
     </header>
     <main>
-        <section class="cadastro">
-            <form id="form_cadastro">
+         <section class="cadastro"> 
+            <form id="form_cadastro" action="">
                 <h1>Cadastro do Usuário</h1>
-                <label>Nome:</label>
-                    <input type="text" placeholder="primeiro nome" name="username" required>
+
+                <label for="username">Usuário:</label>
+                <input type="text" placeholder="Nome do usuário" name="username" id="username">
+                <p id="username-helper" class="helper-text"></p>
+                         
+                <label for="logradouro">Logradouro:</label>
+                <input type="text" placeholder="Ex: Rua, avenida" name="logradouro" id="logradouro" >
+                <p id="logradouro-helper" class="helper-text"></p>
+            
+                <label for="numero">Número:</label>
+                <input type="number" placeholder="Ex.: 123" name="numero" id="numero" >
+                <p id="numero-helper" class="helper-text"></p>
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" placeholder="digite seu bairro" name="bairro" id="bairro">
+                <p id="bairro-helper" class="helper-text"></p>
+            
+                <label for="cidade">Cidade:</label>
+                <input type="text" placeholder="digite sua cidade" name="cidade" id="cidade">
+                <p id="cidade-helper" class="helper-text"></p>
+            
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="digite seu email" name="email" >
+                <p id="email-helper" class="helper-text"></p>
+            
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="digite sua senha" name="password" >
+                <p id="senha-helper" class="helper-text"></p>
+
+                <label for="confirmar-senha">Confirmar-senha</label>
+                <input type="password" id="confirmar-senha" placeholder="Confirme sua senha" name="confirmar_password" >
+                <p id="confirmar-senha-helper" class="helper-text"></p>
+            
+                <button type="submit" class="btn_cadastro">Cadastrar</a></button>
+                    
                 
-                    <label>Sobrenome:</label>
-                    <input type="text" placeholder="último nome" name="lastname" required>
-                
-                    <label>Data de Nascimento:</label>
-                    <input type="date" placeholder="dd/mm/aaaa" name="nascimento">
-                
-                    <label>Endereço:</label>
-                    <input type="text" placeholder="logradouro(Ex.: Rua, AV.)" name="endereco" required>
-                
-                    <label>Número:</label>
-                    <input type="number" placeholder="Ex.: 123" name="numero" required>
-                
-                    <label>Bairro:</label>
-                    <input type="text" placeholder="digite seu nome" name="username" required>
-                
-                    <label>Cidade:</label>
-                    <input type="text" placeholder="digite seu nome" name="username" required>
-                
-                    <label>Email:</label>
-                    <input type="email" placeholder="digite seu email" name="email" required>
-                
-                    <label>Senha:</label>
-                    <input type="password" placeholder="digite sua senha" name="password" required>
-                
-                    <button class="btn_cadastro"><a href="pag_05_01_login.html">Cadastrar</a></button>
-                </div>
             </form>
         </section>
     </main>
