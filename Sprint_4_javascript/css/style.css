@@ -17,7 +17,7 @@ a {
 }
 
 a:hover {
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .nav_cabeçalho {
@@ -36,7 +36,7 @@ a:hover {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 9vh;
+    height: 15vh;
 }
 
 #botao_login {
@@ -88,7 +88,7 @@ a:hover {
 }
 
 .nav_list li {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin-left: 32px;
 }
 
@@ -191,7 +191,7 @@ footer {
 /* ------------------------- Página index ----------------------------- */
 
 .conteudo_principal {
-    background-color: #ffffff;
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 5px 5px 15px #EFE6CD;
     width: 80%;
