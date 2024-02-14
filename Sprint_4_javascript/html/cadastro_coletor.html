@@ -1,12 +1,11 @@
-<!-- recuperar a senha-->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recuperar a Senha</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="/Projeto_Integrador_Proz/Sprint_4_javascript/css/style.css">
-    <script src="/Projeto_Integrador_Proz/Sprint_4_javascript/js/script.js" defer></script>
+    <script src="/Projeto_Integrador_Proz/Sprint_4_javascript/js/cadastro_coletor.js" defer></script>
 </head>
 <body>
     <header>
@@ -35,24 +34,29 @@
         </nav>
     </header>
     <main>
-        <section class="conteudo_principal">
-            <div style="text-align:center">
-                <h1>Recuperar senha</h1>
-                <div>
-                    <form>
-                        <label>Digite seu email:</label>
-                        <input type="email" placeholder="seu email" name="email" required>
-                        <span id="msg_email"></span>
-                    </form>
-                        <input type="submit" value="Enviar" width="20" height="40">
-                        <script>
-                            <alert >Email enviado!</alert>
-                        </script>
-                    <div>   
-                        <a href="pag_05_01_login.html">Voltar à tela de login</a>
-                    </div>
-                </div>
-            </div>
+         <section class="cadastro"> 
+            <form id="form_cadastro" action="">
+                <h1>Cadastro do COLETOR</h1>
+
+                <label for="username">Usuário:</label>
+                <input type="text" placeholder="Nome do usuário" name="username" id="username">
+                <p id="username-helper" class="helper-text"></p>
+                            
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="digite seu email" name="email" >
+                <p id="email-helper" class="helper-text"></p>
+            
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="digite sua senha" name="password" >
+                <p id="senha-helper" class="helper-text"></p>
+
+                <label for="confirmar-senha">Confirmar-senha</label>
+                <input type="password" id="confirmar-senha" placeholder="Confirme sua senha" name="confirmar_password" >
+                <p id="confirmar-senha-helper" class="helper-text"></p>
+            
+                <button type="submit" class="btn_cadastro">Cadastrar</a></button>
+                
+            </form>
         </section>
     </main>
     <footer>
