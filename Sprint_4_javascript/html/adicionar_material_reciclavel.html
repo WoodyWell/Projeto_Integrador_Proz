@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quantidade material reciclado</title>
+    <link rel="stylesheet" href="/Projeto_Integrador_Proz/Sprint_4_javascript/css/style.css"/>
+    <script src="/Projeto_Integrador_Proz/Sprint_4_javascript/js/adicionar_material_reciclavel.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav_principal">
+        <div class="logo_cabeçalho">
+          <a href="index.html"><img
+              class="logo"
+              src="/Projeto_Integrador_Proz/Sprint_4_javascript/img/logo_Recicla_Hero/png/logo4.png"
+              width="140px"
+              alt="Logo Recicla Hero"
+          /></a>
+        </div>
+        <div class="botoes_cabeçalho">
+          <button id="botao_login"><a href="login.html">Login</a></button>
+          <button id="botao_cadastro"><a href="cadastro.html">Cadastre-se DOADOR</a></button>
+          <button id="botao_cadastro"><a href="cadastro_coletor.html">Cadastre-se COLETOR</a></button>
+          <!-- botão para direcionar pagina PROVISÓRIO -->
+          <button id="botao_login"><a href="./adicionar_material_reciclavel.html">Doar RECICLADO</a></button>
+        </div>
+      </nav>
+      <nav class="nav_cabeçalho">
+        <div class="mobile_menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav_list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="como_descartar.html">Como descartar?</a></li>
+          <li><a href="locais_de_entrega.html">Pontos de Entrega</a></li>
+          <li><a href="sobre_o_projeto.html">Sobre o Projeto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="carrinho">
+        <div class="item-carrinho" id="produto-01">
+          <div class="capa"></div>
+          <h3>Latinha de aluminio</h3>
+          <!-- <h4>latinha</h4> -->
+          <p>Valor: R$5.50/Kg</p>
+          <button id="btn-subtrair-produto-01">-</button>
+          <input id="quantidade-produto-01" type="number" value="1" min="0" />
+          <button id="btn-adicionar-produto-01">+</button>
+        </div>
+      </section>
+      <h2>Subtotal</h2>
+      <section id="subtotal">
+        <p><span id="quantidade-subtotal">0</span></p>
+        <p>R$ <span id="valor-subtotal">0</span></p>
+      </section>
+
+    </main>
+    <footer>
+      <nav class="nav_rodape">
+        <a href="index.html"
+          ><img
+            class="logo"
+            src="/Projeto_Integrador_Proz/Sprint_4_javascript/img/logo_Recicla_Hero/png/logo3.png"
+            width="100px"
+            alt="Logo Recicla Hero"
+        /></a>
+        <h6 class="nav_h6">
+          Recicla Hero. &copy; Todos os direitos reservados.
+        </h6>
+      </nav>
+    </footer>
+  </body>
+</html>
