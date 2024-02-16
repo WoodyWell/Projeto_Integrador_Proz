@@ -36,7 +36,7 @@ a:hover {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    height: 15vh;
+    height: 10vh;
 }
 
 #botao_login {
@@ -61,6 +61,15 @@ a:hover {
     a {
         color: white;
     }
+}
+
+.conteudo_principal {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #EFE6CD;
+    width: 80%;
+    padding: 10px;
+    margin: auto;
 }
 
 /* ------------------------- Paleta de cores ----------------------------- */
@@ -100,7 +109,7 @@ a:hover {
 .mobile_menu div {
     width: 32px;
     height: 2px;
-    background: #fff;
+    background: #EFE6CD;
     margin: 8px;
     transition: 0.3s;
 }
@@ -111,13 +120,11 @@ a:hover {
     }
     .nav_list {
         position: absolute;
-        top: 8vh;
+        top: 15vh; 
         right: 0;
-        width: 50vw;
-        height: 100%;
-        border-radius: 10px;
+        width: 100vw;
+        height: 10%;
         background: #7D8758;
-        flex-direction: column;
         align-items: center;
         justify-content: space-around;
         transform: translateX(100%);
@@ -160,7 +167,6 @@ a:hover {
     }
 }
 
-
 .nav_list a {
     color: #fff;
 }
@@ -190,111 +196,28 @@ footer {
 
 /* ------------------------- Página index ----------------------------- */
 
-.conteudo_principal {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px #EFE6CD;
-    width: 80%;
-    padding: 10px;
-    margin: auto;
-}
-
-.main_banner img {
-    padding: auto;
-    margin: auto;
-    border-radius: 10px;
+.main_banner{
     width: 100%;
-    justify-content: center;
-}
-
-#botoes_main_banner {
-    display: flex;
-}
-
-#botao_1 {
-    background-image: linear-gradient(to right,rgb(7, 56, 7), rgb(10, 85, 10));
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px #517360;
-    width: 50%;
-    padding: 10px;
-    margin: 10px;
-    height: fit-content;
-    text-align: center;
-    h2 {
-        font-size: larger;
-        color: white;
-    }
-    #botao_1_1 {
-        margin: 10px;
-        padding: 8px;
-        border-radius: 5px;
-        border: none;
-        font-size: medium;
-        background-color: rgb(59, 185, 0);
-        a {
-            color: white;
-        }
-    }
-}
-
-#botao_2 {
-    background-image: linear-gradient(to right,rgb(18, 151, 18), rgb(22, 182, 22));
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px #517360;
-    width: 50%;
-    padding: 10px;
-    margin: 10px;
-    height: fit-content;
-    text-align: center;
-    h2 {
-        font-size: larger;
-        color: white;
-    }
-    #botao_1_2 {
-        margin: 10px;
-        padding: 8px;
-        border-radius: 5px;
-        border: none;
-        font-size: medium;
-        background-color: rgb(7, 56, 7);
-        a {
-            color: white;
-        }
-    }
-}
-
-.conteudo_meio {
-    display: flex;
-    margin: 10px;
-}
-
-#ranking_aside {
-    margin-bottom: 10px;
-}
-
-#banner_aside {
-    margin-bottom: 10px;
-}
-
-#ranking_aside img {
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px #517360;
-}
-
-#banner_aside img {
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px #517360;
 }
 
 .conteudo_textual {
     padding: 10px;
+    padding-top: 0;
+}
+
+.conteudo_textual hr{
+    width: 70%;
+    height: 3px;
+    border: 0px;
+    background-color: #7D8758;
+    margin-left: 15%;
 }
 
 .conteudo_textual h2 {
     margin-top: 0px;
     margin: 10px;
     font-size: 200%;
-    color: #381E10;
+    color: #7D8758;
     text-align: center;
 }
 
