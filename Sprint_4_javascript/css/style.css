@@ -9,9 +9,11 @@
 
 body {
     background-image: linear-gradient(to bottom, #ffffff, #EFE6CD);
-    display: block
 }
 
+main {
+
+}
 
 a {
     text-decoration: none;
@@ -66,9 +68,9 @@ a:hover {
 }
 
 .conteudo_principal {
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 5px 5px 15px #EFE6CD;
+    box-shadow: 5px 5px 15px #CCC098;
     width: 80%;
     padding: 10px;
     margin: auto;
@@ -218,9 +220,7 @@ footer {
     margin: 20px;
     text-indent: 3ch;
     font-size: 100%;
-    a {
-        color: green;
-    }
+    color: #7D8758;
 }
 
 #conteudo_1{
@@ -248,12 +248,101 @@ footer {
 .chamada_convite{
     font-size: 100%;
     background-color: #7D8758;
-    padding: 5px;
+    padding: 15px;
     h1 {
         color: #EFE6CD;
         text-align: center;
     }
 }
+
+.conteudo_heroi{
+    border-radius: 10px;
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.convite_heroi {
+    background-color: #EFE6CD;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #CCC098;
+    padding: 20px;
+    margin: 30px;
+    width: 30%;
+
+    img{
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    h2{
+        text-align: center;
+        margin-bottom: 10px;
+        color: #7D8758;
+    }
+
+    p{
+        text-align: justify;
+        color: #7D8758;
+    }
+
+}
+
+.convite_heroi:hover {
+    background-color: #7D8758;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #CCC098;
+    padding: 20px;
+    margin: 30px;
+    width: 30%;
+    transition: 0.5s;
+
+    img{
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    h2{
+        text-align: center;
+        margin-bottom: 10px;
+        color: #EFE6CD;
+    }
+
+    p{
+        text-align: justify;
+        color: #EFE6CD;
+    }
+
+}
+
+.chamada_ranking{
+    font-size: 100%;
+    background-color: #7D8758;
+    padding: 15px;
+    h1 {
+        color: #EFE6CD;
+        text-align: center;
+    }
+}
+
+.conteudo_ranking{
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    img {
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px #CCC098;
+        padding: 20px;
+        margin: 30px;
+    }
+}
+
 
 /* ------------------------- Página locais de entrega ----------------------------- */
 
