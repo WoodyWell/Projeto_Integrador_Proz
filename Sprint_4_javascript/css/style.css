@@ -138,10 +138,6 @@ a:hover {
         display: block;
     }
 
-    .aside_ranking{
-        display: none;
-    }
-
     #banner_abrelpe {
         display: none;
     }
@@ -202,20 +198,14 @@ footer {
 
 .conteudo_textual {
     padding: 10px;
-    padding-top: 0;
-}
-
-.conteudo_textual hr{
-    width: 70%;
-    height: 3px;
-    border: 0px;
-    background-color: #7D8758;
-    margin-left: 15%;
+    img {
+        width: 25%;
+        align-items: center;
+    }
 }
 
 .conteudo_textual h2 {
-    margin-top: 0px;
-    margin: 10px;
+    margin: 5px;
     font-size: 200%;
     color: #7D8758;
     text-align: center;
@@ -223,7 +213,7 @@ footer {
 
 .conteudo_textual p {
     text-align: justify;
-    margin: 10px;
+    margin: 20px;
     text-indent: 3ch;
     font-size: 100%;
     a {
@@ -233,10 +223,8 @@ footer {
 
 #conteudo_1{
     display: flex;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    padding: 0px;
+    margin: 0px;
     align-items: center;
     #conteudo_1_1{
         display: block;
@@ -246,10 +234,8 @@ footer {
 
 #conteudo_2{
     display: flex;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    padding: 0px;
+    margin: 0px;
     align-items: center;
     #conteudo_2_1{
         display: block;
@@ -257,16 +243,13 @@ footer {
     }
 }
 
-#conteudo_3{
-    display: flex;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    align-items: center;
-    #conteudo_3_1{
-        display: block;
-        margin: 10px;
+.chamada_convite{
+    font-size: 100%;
+    background-color: #7D8758;
+    padding: 5px;
+    h1 {
+        color: #EFE6CD;
+        text-align: center;
     }
 }
 
