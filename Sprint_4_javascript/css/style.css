@@ -698,11 +698,11 @@ label{
     left: 50%;
   }
   
-  /* input {
+  #quantidade-produto-01 {
     width: 40px;
     text-align: center;
   }
-   */
+  
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
     -webkit-appearance: none;
