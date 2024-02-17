@@ -80,9 +80,15 @@ let usernameHelper = document.getElementById("username-helper");
 mostrar_popup(usernameInput, usernameLabel);
 
 //Validar valor do input com numero minimo de 3 caracteres:
-usernameInput.addEventListener("change", (e) => {
+usernameInput.addEventListener("blur", (e) => {
   let valor = e.target.value;
-  if (valor.length < 3) {
+
+  if (valor == "") {
+    //valor Incorreto CAMPO VAZIO
+    estilizarInputIncorreto(usernameInput, usernameHelper);
+    usernameHelper.innerText = "Digite o nome, campo está vazio";
+    inputsCorretos.confirmaSenha = false;
+  } else if (valor.length < 3) {
     //Valor incorreto
     estilizarInputIncorreto(usernameInput, usernameHelper);
     usernameHelper.innerText = "Usuário precisa ter 3 ou + caracteres";
@@ -109,7 +115,7 @@ logradouroInput.addEventListener("blur", (e) => {
   if (valor == "") {
     //valor Incorreto VAZIO
     estilizarInputIncorreto(logradouroInput, logradouroHelper);
-    logradouroHelper.innerText = "Digite o logradouro, campo vazio";
+    logradouroHelper.innerText = "Digite o logradouro, campo está vazio";
     inputsCorretos.logradouro = false;
   } else {
     //Valor Correto
@@ -133,7 +139,7 @@ numeroInput.addEventListener("blur", (e) => {
   if (valor == "") {
     //valor Incorreto VAZIO
     estilizarInputIncorreto(numeroInput, numeroHelper);
-    numeroHelper.innerText = "Digite o numero, campo vazio";
+    numeroHelper.innerText = "Digite o numero, campo está vazio";
     inputsCorretos.numero = false;
   } else {
     //Valor Correto
@@ -157,7 +163,7 @@ bairroInput.addEventListener("blur", (e) => {
   if (valor == "") {
     //valor Incorreto VAZIO
     estilizarInputIncorreto(bairroInput, bairroHelper);
-    bairroHelper.innerText = "Digite o bairro, campo vazio";
+    bairroHelper.innerText = "Digite o bairro, campo está vazio";
     inputsCorretos.bairro = false;
   } else {
     //Valor Correto
@@ -181,7 +187,7 @@ cidadeInput.addEventListener("blur", (e) => {
   if (valor == "") {
     //valor Incorreto VAZIO
     estilizarInputIncorreto(cidadeInput, cidadeHelper);
-    cidadeHelper.innerText = "Digite a cidade, campo vazio";
+    cidadeHelper.innerText = "Digite a cidade, campo está vazio";
     inputsCorretos.cidade = false;
   } else {
     //Valor Correto
@@ -202,17 +208,23 @@ mostrar_popup(emailInput, emailLabel);
 
 //Validando presença arroba @:
 //Função INCLUDES verifica se tem paramentro passado e retorna TRUE ou FALSE
-emailInput.addEventListener("change", (e) => {
+emailInput.addEventListener("blur", (e) => {
   let valor = e.target.value;
-  if (valor.includes("@") && valor.includes(".com")) {
+
+  if (valor == "") {
+    //valor Incorreto CAMPO VAZIO
+    estilizarInputIncorreto(emailInput, emailHelper);
+    emailHelper.innerText = "Digite o email, campo está vazio";
+    inputsCorretos.confirmaSenha = false;
+  } else if (valor.includes("@") && valor.includes(".com")) {
     //Valor correto
     estilizarInputCorreto(emailInput, emailHelper);
     emailHelper.innerText = "";
     inputsCorretos.email = true;
   } else {
-    //Valor incorreto    
+    //Valor incorreto
     estilizarInputIncorreto(emailInput, emailHelper);
-    emailHelper.innerText = "Email precisa ter @ ou .com";
+    emailHelper.innerText = "Email precisa ter @ e .com";
     inputsCorretos.email = false;
   }
 });
@@ -231,7 +243,7 @@ senhaInput.addEventListener("blur", (e) => {
   if (valor == "") {
     //valor Incorreto VAZIO
     estilizarInputIncorreto(senhaInput, senhaHelper);
-    senhaHelper.innerText = "Digite a senha, campo vazio";
+    senhaHelper.innerText = "Digite a senha, campo está vazio";
     inputsCorretos.senha = false;
   } else {
     //Valor Correto
@@ -254,13 +266,18 @@ mostrar_popup(confirmar_senhaInput, confirmar_senhaLabel);
 
 confirmar_senhaInput.addEventListener("blur", (e) => {
   let valorConfirmaSenha = e.target.value;
-  if (valorConfirmaSenha == senhaInput.value) {
+  if (valorConfirmaSenha == "") {
+    //valor Incorreto CAMPO VAZIO
+    estilizarInputIncorreto(confirmar_senhaInput, confirmar_senhaHelper);
+    confirmar_senhaHelper.innerText = "Confirme a senha, campo está vazio";
+    inputsCorretos.confirmaSenha = false;
+  } else if (valorConfirmaSenha == senhaInput.value) {
     //valor correto
     estilizarInputCorreto(confirmar_senhaInput, confirmar_senhaHelper);
     confirmar_senhaHelper.innerText = "";
     inputsCorretos.confirmaSenha = true;
   } else {
-    //Valor INCORRETO
+    //Valor INCORRETO SENHA DIFERENTE
     console.log("valor INCORRETO");
     estilizarInputIncorreto(confirmar_senhaInput, confirmar_senhaHelper);
     confirmar_senhaHelper.innerText = "Senha está diferente";

@@ -9,7 +9,9 @@
 
 body {
     background-image: linear-gradient(to bottom, #ffffff, #EFE6CD);
+    display: block
 }
+
 
 a {
     text-decoration: none;
@@ -572,3 +574,47 @@ label{
         margin-right: 20px;
     }
 }
+
+/* ------------------------- adicionar material reciclavel ----------------------------- */
+
+#carrinho {
+    display: flex;
+  }
+  
+  .item-carrinho {
+    background-color: lightseagreen;
+    margin-right: 2rem;
+    padding: 1rem 1.5rem;
+    width: 300px;
+    border-radius: 8px;
+  }
+  
+  .capa {
+    width: 80px;
+    height: 100px;
+    background-color: lightgray;
+    position: relative;
+  }
+  
+  .capa::after {
+    content: "Capa";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  
+  #quantidade-produto-01 {
+    width: 40px;
+    text-align: center;
+  }
+  
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  #subtotal {
+    font-size: 1.2rem;
+  } 
