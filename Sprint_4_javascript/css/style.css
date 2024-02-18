@@ -702,6 +702,11 @@ label{
     width: 40px;
     text-align: center;
   }
+
+  #quantidade-produto-02 {
+    width: 40px;
+    text-align: center;
+  }
   
   input::-webkit-outer-spin-button,
   input::-webkit-inner-spin-button {
