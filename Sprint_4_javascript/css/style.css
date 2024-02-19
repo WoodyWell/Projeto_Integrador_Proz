@@ -503,21 +503,21 @@ label{
     display: flex;
     flex-direction: column;
     width: 300px;
-    background-color: white;
+    background-color: #fff;
     border-radius: 16px;
-    box-shadow: 3px 3px 10px #517360;
+    box-shadow: 3px 3px 10px #7D8758;
     padding: 1.5rem 40px;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 250px;
+    margin-bottom: 250px;
     margin-left: 200px;
     h1 {
-        font-size: 200%;
+        font-size: 180%;
         margin: 10px;
-        color: #381E10;
+        color: #7D8758;
     }
 
     label {
-        color: #381E10;
+        color: #7D8758;
     }
 
     input {
@@ -530,11 +530,20 @@ label{
     }
   }
 
+#usuario_login input{
+    margin-top: 10px;
+}
+
+#senha_login input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 
   #main_login {
-    background: url(/Sprint_4_javascript/img/conteudo_login/background_login.png);
+    background: url(/Projeto_Integrador_Proz/Sprint_4_javascript/img/conteudo_login/background_login3.png);
     background-size: cover;
-    height: fit-content;
+    background-position: center;
 }
 
 .login{
@@ -543,21 +552,33 @@ label{
 }
 
 .btn_login{  
-    justify-content: center;
     width: 100px;
-    height: 35px;
-    margin-top: .5rem;
-    font-size: 1rem;
-    align-self: center;
-    border: none;
+    margin: 20px;
+    padding: 8px;
     border-radius: 5px;
-    color: white;
-    background-color: green;
+    border: none;
+    font-size: medium;
+    background-color: #9EA58D;
+    color: #fff;
+    align-self: center;
+}
+
+.btn_login:hover{  
+    width: 100px;
+    margin: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: medium;
+    background-color: #C5B67B;
+    color: #fff;
+    align-self: center;
+    transition: 0.8s;
 }
 
 #sem_cadastro {
     text-align: center;
-    margin: 10px;
+    margin: 20px;
     padding: 10px;
 }
 
