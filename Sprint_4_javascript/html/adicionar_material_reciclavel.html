@@ -40,7 +40,7 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <br>
       
       <section id="carrinho">
         <div class="item-carrinho" id="produto-01">
@@ -48,34 +48,36 @@
           <h3>Latinha de aluminio</h3>
           <!-- <h4>latinha</h4> -->
           <p>Valor: R$5.50/Kg</p>
-          <button id="btn-subtrair-produto-01">-</button>
+          <button class="btn-produto" id="btn-subtrair-produto-01">-</button>
           <input id="quantidade-produto-01" type="number" value="1" min="0" />
-          <button id="btn-adicionar-produto-01">+</button>
+          <button class="btn-produto" id="btn-adicionar-produto-01">+</button>
+          <h2>Subtotal</h2>
+          <section id="subtotal">
+            <p><span id="quantidade-subtotal">0</span></p>
+            <p>R$ <span id="valor-subtotal">0</span></p>
+          </section>
         </div>
-      </section>
-      <h2>Subtotal</h2>
-      <section id="subtotal">
-        <p><span id="quantidade-subtotal">0</span></p>
-        <p>R$ <span id="valor-subtotal">0</span></p>
-      </section>
-
-      <section id="carrinho">
+        
+        </br>
+      
+      
         <div class="item-carrinho" id="produto-02">
           <div class="capa"></div>
           <h3>Papelão</h3>
           <!-- <h4>latinha</h4> -->
           <p>Valor: R$0,73/Kg</p>
-          <button id="btn-subtrair-produto-02">-</button>
+          <button class="btn-produto" id="btn-subtrair-produto-02">-</button>
           <input id="quantidade-produto-02" type="number" value="1" min="0" />
-          <button id="btn-adicionar-produto-02">+</button>
+          <button class="btn-produto" id="btn-adicionar-produto-02">+</button>
+          <h2>Subtotal</h2>
+          <section id="subtotal2">
+            <p><span id="quantidade-subtotal2">0</span></p>
+            <p>R$ <span id="valor-subtotal2">0</span></p>
+          </section>
         </div>
+      
       </section>
-      <h2>Subtotal</h2>
-      <section id="subtotal2">
-        <p><span id="quantidade-subtotal2">0</span></p>
-        <p>R$ <span id="valor-subtotal2">0</span></p>
-      </section>
-
+      
     </main>
     <footer>
       <nav class="nav_rodape">

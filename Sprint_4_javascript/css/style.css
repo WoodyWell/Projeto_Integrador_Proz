@@ -11,9 +11,7 @@ body {
     background-image: linear-gradient(to bottom, #ffffff, #EFE6CD);
 }
 
-main {
 
-}
 
 a {
     text-decoration: none;
@@ -689,20 +687,41 @@ label{
 
 #carrinho {
     display: flex;
+    justify-content:center ;
+    flex-direction: row;
+    
   }
   
+
+
+/* Nova paleta de cores
+.Vintage-Cremes--Greens-1-hex { color: #9EA58D; }
+.Vintage-Cremes--Greens-2-hex { color: #CCC098; }
+.Vintage-Cremes--Greens-3-hex { color: #EFE6CD; }
+.Vintage-Cremes--Greens-4-hex { color: #7D8758; }
+.Vintage-Cremes--Greens-5-hex { color: #C5B67B; } */
+
+
   .item-carrinho {
-    background-color: lightseagreen;
+    
+    background-color: #C5B67B;
     margin-right: 2rem;
     padding: 1rem 1.5rem;
-    width: 300px;
-    border-radius: 8px;
+    width: 250px;
+    border-radius: 20px;
+    input {
+        padding: 5px;
+        margin-left: 10px;
+        border: none;
+        width: 200px;
+        margin-right: 0px;
+    }
   }
   
   .capa {
     width: 80px;
     height: 100px;
-    background-color: lightgray;
+    background-color:#7D8758;
     position: relative;
   }
   
@@ -732,4 +751,17 @@ label{
   
   #subtotal {
     font-size: 1.2rem;
-  } 
+  }
+
+  .btn-produto{
+    width: 50px;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: medium;
+    background-color: white;
+    color: black;
+    align-self: center;
+    transition: 0.8s;
+  }
