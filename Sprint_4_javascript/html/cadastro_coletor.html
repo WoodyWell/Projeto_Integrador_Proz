@@ -15,9 +15,7 @@
             </div>
             <div class="botoes_cabeçalho">
                 <button id="botao_login"><a href="login.html">Entrar</a></button>
-                <button id="botao_cadastro"><a href="cadastro.html">Cadastre-se DOADOR</a></button>
-                <button id="botao_cadastro"><a href="cadastro_coletor.html">Cadastre-se COLETOR</a></button>
-
+                <button id="botao_cadastro"><a href="cadastro_escolha.html">Cadastre-se</a></button>
                 <!-- botão para direcionar pagina PROVISÓRIO -->
                 <button id="botao_login"><a href="./adicionar_material_reciclavel.html">Doar RECICLADO</a></button>
             </div>
@@ -36,25 +34,26 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="main_cadastro_coletor">
          <section class="cadastro"> 
             <form id="form_cadastro" action="">
-                <h1>Cadastro do COLETOR</h1>
-
-                <label for="username">Usuário:</label>
-                <input type="text" placeholder="Nome do usuário" name="username" id="username">
+                <h1>Complete o cadastro para começar a coletar.</h1>
+                <h3 class="dados_pessoais">Dados pessoais</h3>
+                <label for="username">Nome:</label>
+                <input type="text" placeholder="Digite o seu nome" name="username" id="username">
                 <p id="username-helper" class="helper-text"></p>
-                            
+                <hr>
+                <h3>Dados da conta</h3>
                 <label for="email">E-mail</label>
-                <input type="email" id="email" placeholder="digite seu email" name="email" >
+                <input type="email" id="email" placeholder="Digite o seu email" name="email" >
                 <p id="email-helper" class="helper-text"></p>
             
                 <label for="senha">Senha</label>
-                <input type="password" id="senha" placeholder="digite sua senha" name="password" >
+                <input type="password" id="senha" placeholder="Digite a sua senha" name="password" >
                 <p id="senha-helper" class="helper-text"></p>
 
                 <label for="confirmar-senha">Confirmar-senha</label>
-                <input type="password" id="confirmar-senha" placeholder="Confirme sua senha" name="confirmar_password" >
+                <input type="password" id="confirmar-senha" placeholder="Confirme a ua senha" name="confirmar_password" >
                 <p id="confirmar-senha-helper" class="helper-text"></p>
             
                 <button type="submit" class="btn_cadastro">Cadastrar</a></button>

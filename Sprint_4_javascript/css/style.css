@@ -11,15 +11,9 @@ body {
     background-image: linear-gradient(to bottom, #ffffff, #EFE6CD);
 }
 
-
-
 a {
     text-decoration: none;
     transition: 0.3s;
-}
-
-a:hover {
-    opacity: 0.7;
 }
 
 .nav_cabeçalho {
@@ -47,13 +41,38 @@ a:hover {
     border-radius: 5px;
     border: none;
     font-size: medium;
-    background-color: #9EA58D;
+    background-color: #7D8758;
+    a {
+        color: white;
+    }
+}
+
+#botao_login:hover {
+    margin: 8px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: medium;
+    background-color: #C5B67B;
+    transition: 0.5s;
     a {
         color: white;
     }
 }
 
 #botao_cadastro {
+    margin: 8px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: medium;
+    background-color: #7D8758;
+    a {
+        color: white;
+    }
+}
+
+#botao_cadastro:hover {
     margin: 8px;
     padding: 8px;
     border-radius: 5px;
@@ -101,6 +120,15 @@ a:hover {
 .nav_list li {
     letter-spacing: 1px;
     margin-left: 32px;
+}
+
+.nav_list li a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav_list li a:hover {
+    opacity: 0.7;
 }
 
 .mobile_menu {
@@ -411,31 +439,97 @@ footer {
 
 .cadastro{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
     h1{
-        color: black;
+        color: #7D8758;
         align-self: center;
+        margin: 20px;
     }
 } 
 
-
   #form_cadastro {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    width: 300px;
-    background-color: lightgray;
+    align-self: center;
     border-radius: 16px;
+    background-color: #EFE6CD;
+    box-shadow: 5px 5px 15px #7D8758;
     padding: 1.5rem 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    h1 {
+        font-size: 180%;
+        margin: 10px;
+        color: #7D8758;
+    }
+
+    h3 {
+        margin-top: 25px;
+        margin-bottom: 15x;
+        color: #7D8758;
+    }
+
+    .dados_pessoais{
+        margin-top: 25px;
+        margin-bottom: 15px;
+        color: #7D8758;
+    }
+
+    label {
+        color: #7D8758;
+        margin-bottom: 10px;
+    }
+
+    input {
+        padding: 10px;
+    }
+  }
+
+  hr {
+    margin-top: 25px;
+    border-top: 5px dotted #7D8758;
   }
 
 .btn_cadastro {
     width: 100px;
-    height: 40px;
-    margin-top: 1.5rem;
-    font-size: 1rem;
+    margin: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: medium;
+    background-color: #9EA58D;
+    color: #fff;
     align-self: center;
 }
+
+.btn_cadastro:hover {
+    width: 100px;
+    margin: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: medium;
+    background-color: #C5B67B;
+    color: #fff;
+    align-self: center;
+    transition: 0.8s;
+}
+
+.main_cadastro_doador{
+    background: url(/Projeto_Integrador_Proz/Sprint_4_javascript/img/conteudo_cadastro/background_login4.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.main_cadastro_coletor{
+    background: url(/Projeto_Integrador_Proz/Sprint_4_javascript/img/conteudo_cadastro/background_login3.png);
+    background-size: cover;
+    background-position: center;
+}
+
 
 input{
     padding: .2rem .5rem;
@@ -580,6 +674,76 @@ label{
     padding: 10px;
 }
 
+/* ------------------------- Escolha cadastro ----------------------------- */
+
+
+.cadastro_escolha {
+    width: 100%
+}
+
+.conteudo_cadastro_escolha{
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.escolha_cadastro {
+    background-color: #EFE6CD;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #CCC098;
+    padding: 20px;
+    margin: 30px;
+    width: 30%;
+
+    img{
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    h2{
+        text-align: center;
+        margin-bottom: 10px;
+        color: #7D8758;
+    }
+
+    p{
+        text-align: justify;
+        color: #7D8758;
+    }
+
+}
+
+.escolha_cadastro:hover {
+    background-color: #7D8758;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #CCC098;
+    padding: 20px;
+    margin: 30px;
+    width: 30%;
+    transition: 0.5s;
+
+    img{
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    h2{
+        text-align: center;
+        margin-bottom: 10px;
+        color: #EFE6CD;
+    }
+
+    p{
+        text-align: justify;
+        color: #EFE6CD;
+    }
+
+}
 
 /* ------------------------- Como descartar? ----------------------------- */
 
