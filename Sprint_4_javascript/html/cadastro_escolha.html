@@ -1,12 +1,13 @@
-<!-- recuperar a senha-->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recuperar a Senha</title>
+    <title>Login</title>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <link rel="stylesheet" href="/Projeto_Integrador_Proz/Sprint_4_javascript/css/style.css">
     <script src="/Projeto_Integrador_Proz/Sprint_4_javascript/js/script.js" defer></script>
+</script>
 </head>
 <body>
     <header>
@@ -35,24 +36,19 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="conteudo_principal">
-            <div style="text-align:center">
-                <h1>Recuperar senha</h1>
-                <div>
-                    <form>
-                        <label>Digite seu email:</label>
-                        <input type="email" placeholder="seu email" name="email" required>
-                        <span id="msg_email"></span>
-                    </form>
-                        <input type="submit" value="Enviar" width="20" height="40">
-                        <script>
-                            <alert >Email enviado!</alert>
-                        </script>
-                    <div>   
-                        <a href="pag_05_01_login.html">Voltar à tela de login</a>
-                    </div>
+    <main id="main_cadastro_escolha">
+        <section class="cadastro_escolha">
+            <div class="conteudo_cadastro_escolha">
+                <div class="escolha_cadastro">
+                    <a href="cadastro.html"><img src="/Projeto_Integrador_Proz/Sprint_4_javascript/img/conteudo_escolha_cadastro/doador.png" alt="Pessoa doadora de material reciclável">
+                        <h2>Quero ser um herói doador</h2>
+                        <p>Torne-se um herói doador e comece a reciclar sem sair de casa. Ganhe pontos, participe do ranking dos heróis e desbloqueie conquistas exclusivas para o seu perfil.</p></a>
                 </div>
+                <div class="escolha_cadastro">
+                    <a href="cadastro_coletor.html"><img src="/Projeto_Integrador_Proz/Sprint_4_javascript/img/conteudo_escolha_cadastro/coletor.png" alt="Pessoa doadora de material reciclável">
+                        <h2>Quero ser um herói coletor</h2>
+                        <p>Torne-se um herói coletor para começar a recolher os materiais recicláveis diretamente nas residências das pessoas de forma fácil, rápida e segura.</p>
+                    </div></a>
             </div>
         </section>
     </main>
