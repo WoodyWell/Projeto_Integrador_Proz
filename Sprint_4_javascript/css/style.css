@@ -79,6 +79,7 @@ a {
     border: none;
     font-size: medium;
     background-color: #C5B67B;
+    transition: 0.5s;
     a {
         color: white;
     }
@@ -851,13 +852,9 @@ label{
 
 #carrinho {
     display: flex;
-    justify-content:center ;
-    flex-direction: row;
-    
+    margin: 30px;
   }
   
-
-
 /* Nova paleta de cores
 .Vintage-Cremes--Greens-1-hex { color: #9EA58D; }
 .Vintage-Cremes--Greens-2-hex { color: #CCC098; }
@@ -865,46 +862,53 @@ label{
 .Vintage-Cremes--Greens-4-hex { color: #7D8758; }
 .Vintage-Cremes--Greens-5-hex { color: #C5B67B; } */
 
-
   .item-carrinho {
-    
-    background-color: #C5B67B;
-    margin-right: 2rem;
-    padding: 1rem 1.5rem;
-    width: 250px;
-    border-radius: 20px;
+    display: flex;
+    background-color: #EFE6CD;
+    padding: 15px;
+    margin: 35px;
+    width: 50%;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #CCC098;
     input {
         padding: 5px;
         margin-left: 10px;
         border: none;
         width: 200px;
-        margin-right: 0px;
     }
   }
   
   .capa {
-    width: 80px;
-    height: 100px;
-    background-color:#7D8758;
-    position: relative;
+    width: 40%;
+    img {
+        width: 100%;
+    }
   }
-  
-  .capa::after {
-    content: "Capa";
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+
+  .descricao_item {
+    width: 60%;
+    align-self: center;
+    color: #7D8758;
+  }
+
+  .quantidade_itens {
+    margin-bottom: 20px;
+    text-align: center;
   }
   
   #quantidade-produto-01 {
     width: 40px;
+    border-radius: 5px;
     text-align: center;
+    justify-content: center;
   }
 
   #quantidade-produto-02 {
     width: 40px;
+    border-radius: 5px;
     text-align: center;
+    justify-content: center;
   }
   
   input::-webkit-outer-spin-button,
@@ -914,7 +918,11 @@ label{
   }
   
   #subtotal {
-    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  #subtotal2 {
+    text-align: center;
   }
 
   .btn-produto{
@@ -924,8 +932,8 @@ label{
     border-radius: 5px;
     border: none;
     font-size: medium;
-    background-color: white;
-    color: black;
+    background-color: #7D8758;
+    color: #fff;
     align-self: center;
     transition: 0.8s;
   }

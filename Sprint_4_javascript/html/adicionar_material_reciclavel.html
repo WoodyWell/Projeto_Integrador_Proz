@@ -10,87 +10,78 @@
   <body>
     <header>
       <nav class="nav_principal">
-        <div class="logo_cabeçalho">
-          <a href="index.html"><img
-              class="logo"
-              src="/Projeto_Integrador_Proz/Sprint_4_javascript/img/logo_Recicla_Hero/png/logo4.png"
-              width="140px"
-              alt="Logo Recicla Hero"
-          /></a>
-        </div>
-        <div class="botoes_cabeçalho">
-          <button id="botao_login"><a href="login.html">Entrar</a></button>
-          <button id="botao_cadastro"><a href="cadastro_escolha.html">Cadastre-se</a></button>
-          <!-- botão para direcionar pagina PROVISÓRIO -->
-          <button id="botao_login"><a href="./adicionar_material_reciclavel.html">Doar RECICLADO</a></button>
-        </div>
+          <div class="logo_cabeçalho">
+              <a href="index.html"><img class="logo" src="/Projeto_Integrador_Proz/Sprint_4_javascript/img/logo_Recicla_Hero/png/logo4.png" width="140px" alt="Logo Recicla Hero"></a>
+          </div>
+          <div class="botoes_cabeçalho">
+              <button id="botao_login"><a href="login.html">Entrar</a></button>
+              <button id="botao_cadastro"><a href="cadastro_escolha.html">Cadastre-se</a></button>
+              <!-- botão para direcionar pagina PROVISÓRIO -->
+              <button id="botao_login"><a href="./adicionar_material_reciclavel.html">Doar RECICLADO</a></button>
+          </div>
       </nav>
       <nav class="nav_cabeçalho">
-        <div class="mobile_menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-        <ul class="nav_list">
-          <li><a href="index.html">Início</a></li>
-          <li><a href="como_descartar.html">Como descartar?</a></li>
-          <li><a href="locais_de_entrega.html">Pontos de Entrega</a></li>
-          <li><a href="sobre_o_projeto.html">Sobre o Projeto</a></li>
-        </ul>
+          <div class="mobile_menu">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+          </div>
+          <ul class="nav_list">
+              <li><a href="index.html">Início</a></li>
+              <li><a href="como_descartar.html">Como descartar?</a></li>
+              <li><a href="locais_de_entrega.html">Pontos de Entrega</a></li>
+              <li><a href="sobre_o_projeto.html">Sobre o Projeto</a></li>
+          </ul>
       </nav>
-    </header>
-    <br>
-      
+  </header>
+  <main>
       <section id="carrinho">
         <div class="item-carrinho" id="produto-01">
-          <div class="capa"></div>
-          <h3>Latinha de aluminio</h3>
+          <div class="capa"><img src="/Projeto_Integrador_Proz/Sprint_4_javascript/img/conteudo_adicionar_material/latinha.png" alt="Latinha de alumínio"></div>
+          
           <!-- <h4>latinha</h4> -->
-          <p>Valor: R$5.50/Kg</p>
-          <button class="btn-produto" id="btn-subtrair-produto-01">-</button>
-          <input id="quantidade-produto-01" type="number" value="1" min="0" />
-          <button class="btn-produto" id="btn-adicionar-produto-01">+</button>
-          <h2>Subtotal</h2>
-          <section id="subtotal">
-            <p><span id="quantidade-subtotal">0</span></p>
-            <p>R$ <span id="valor-subtotal">0</span></p>
-          </section>
+          <div class="descricao_item">
+            <div class="quantidade_itens">
+              <h2>Latinha de Alumínio</h2>
+              <p>Valor: R$5,50/Kg</p>
+              <button class="btn-produto" id="btn-subtrair-produto-01">-</button>
+              <input id="quantidade-produto-01" type="number" value="1" min="0" />
+              <button class="btn-produto" id="btn-adicionar-produto-01">+</button>
+            </div>
+            <section id="subtotal">
+              <h2>Subtotal</h2>
+              <p><span id="quantidade-subtotal">0</span></p>
+              <p>R$ <span id="valor-subtotal">0</span></p>
+            </section>
+          </div>
         </div>
-        
-        </br>
-      
       
         <div class="item-carrinho" id="produto-02">
-          <div class="capa"></div>
-          <h3>Papelão</h3>
+          <div class="capa"><img src="/Projeto_Integrador_Proz/Sprint_4_javascript/img/conteudo_adicionar_material/papelão.png" alt="Papelão"></div>
+          
           <!-- <h4>latinha</h4> -->
-          <p>Valor: R$0,73/Kg</p>
-          <button class="btn-produto" id="btn-subtrair-produto-02">-</button>
-          <input id="quantidade-produto-02" type="number" value="1" min="0" />
-          <button class="btn-produto" id="btn-adicionar-produto-02">+</button>
-          <h2>Subtotal</h2>
-          <section id="subtotal2">
-            <p><span id="quantidade-subtotal2">0</span></p>
-            <p>R$ <span id="valor-subtotal2">0</span></p>
-          </section>
+          <div class="descricao_item">
+            <div class="quantidade_itens">
+              <h2>Papelão</h2>
+              <p>Valor: R$0,73/Kg</p>
+              <button class="btn-produto" id="btn-subtrair-produto-02">-</button>
+              <input id="quantidade-produto-02" type="number" value="1" min="0" />
+              <button class="btn-produto" id="btn-adicionar-produto-02">+</button>
+            </div>
+            <section id="subtotal2">
+              <h2>Subtotal</h2>
+              <p><span id="quantidade-subtotal2">0</span></p>
+              <p>R$ <span id="valor-subtotal2">0</span></p>
+            </section>
+          </div>
         </div>
-      
       </section>
-      
     </main>
     <footer>
       <nav class="nav_rodape">
-        <a href="index.html"
-          ><img
-            class="logo"
-            src="/Projeto_Integrador_Proz/Sprint_4_javascript/img/logo_Recicla_Hero/png/logo3.png"
-            width="100px"
-            alt="Logo Recicla Hero"
-        /></a>
-        <h6 class="nav_h6">
-          Recicla Hero. &copy; Todos os direitos reservados.
-        </h6>
+          <a href="index.html"><img class="logo" src="/Projeto_Integrador_Proz/Sprint_4_javascript/img/logo_Recicla_Hero/png/logo3.png" width="100px" alt="Logo Recicla Hero"></a>
+          <h6 class="nav_h6">Recicla Hero. &copy; Todos os direitos reservados.</h6>
       </nav>
-    </footer>
+  </footer>
   </body>
 </html>
