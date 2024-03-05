@@ -114,8 +114,7 @@ id smallint PRIMARY KEY AUTO_INCREMENT,
 pontos_doador_latinhas float,
 pontos_doador_papelao float,
 pontos_coletor_latinhas float,
-pontos_coletor_papelao float,	
-fk_id_pontuacao_doador smallint NOT NULL
+pontos_coletor_papelao float
 
 );
 
@@ -141,11 +140,59 @@ select * from pontuacao_doador;
 
 */
 
+
 -- -------------------------------- populando tabela PONTUACAO : ------------------------------------------
 
 -- insert into pontuacao (pontos_doador_latinhas, pontos_doador_papelao, pontos_coletor_latinhas,pontos_coletor_papelao) values (10,5,100,50);
 
 -- select * from pontuacao;
+
+-- -------------------------------- Criando uma função para calcular pontuação:  ------------------------------------------
+
+/*
+DELIMITER //
+CREATE FUNCTION calcular_pontuacao(quantidade_latinhas float, pontos_doador_latinhas float) 
+RETURNS FLOAT
+DETERMINISTIC
+BEGIN
+    DECLARE resultado FLOAT;
+    SELECT COALESCE(quantidade_latinhas, 1) * COALESCE(pontos_doador_latinhas, 1) INTO resultado 
+    LIMIT 1;
+    RETURN resultado;
+END //
+DELIMITER ;
+
+*/
+
+-- Realizando multiplicação do material reciclado com tabela pontuação ---------------------
+
+/*
+SELECT 
+    material_reciclado.quantidade_latinhas,
+    material_reciclado.fk_id_doador,
+    pontuacao.pontos_doador_latinhas,
+    calcular_pontuacao( material_reciclado.quantidade_latinhas, pontuacao.pontos_doador_latinhas) AS resultado_multiplicacao
+FROM 
+    material_reciclado
+JOIN 
+    pontuacao ON material_reciclado.id = pontuacao.id;
+
+*/
+
+-- Chamada da função e armazenamento do resultado em uma variável
+-- SET @resultado = calcular_pontuacao();
+
+-- Exibição do resultado
+-- SELECT @resultado AS Resultado;
+
+-- update pontuacao_doador set pontos_latinhas = calcular_pontuacao() where id=1;
+
+
+
+
+-- select * from pontuacao_doador;
+
+
 
 
 
