@@ -2,7 +2,7 @@
 -- create database projeto_integrador
 
 -- Selecionando o banco de dados criado:
--- use projeto_integrador
+-- use projeto_integrador;
 
 -- -------------------------------- Criando tabela CADASTRO_DOADOR: ------------------------------------------
 /*
@@ -87,7 +87,9 @@ insert into material_reciclado (quantidade_latinhas, quantidade_papelao, fk_id_d
                                 (0,1,5),
                                 (2,2,2),
                                 (3,3,3),
+                                (3,2,1),
                                 (12,1,5);
+
 
 select * from material_reciclado;
 */
@@ -149,54 +151,59 @@ select * from pontuacao_doador;
 
 -- -------------------------------- Criando uma função para calcular pontuação:  ------------------------------------------
 
-/*
-DELIMITER //
-CREATE FUNCTION calcular_pontuacao(quantidade_latinhas float, pontos_doador_latinhas float) 
-RETURNS FLOAT
-DETERMINISTIC
-BEGIN
-    DECLARE resultado FLOAT;
-    SELECT COALESCE(quantidade_latinhas, 1) * COALESCE(pontos_doador_latinhas, 1) INTO resultado 
-    LIMIT 1;
-    RETURN resultado;
-END //
-DELIMITER ;
+-- drop function calcular_pontuacao;
 
-*/
+-- select * from cadastro_doador;
 
--- Realizando multiplicação do material reciclado com tabela pontuação ---------------------
+-- select * from doador;
 
-/*
-SELECT 
-    material_reciclado.quantidade_latinhas,
-    material_reciclado.fk_id_doador,
-    pontuacao.pontos_doador_latinhas,
-    calcular_pontuacao( material_reciclado.quantidade_latinhas, pontuacao.pontos_doador_latinhas) AS resultado_multiplicacao
-FROM 
-    material_reciclado
-JOIN 
-    pontuacao ON material_reciclado.id = pontuacao.id;
+-- select * from material_reciclado;
 
-*/
-
--- Chamada da função e armazenamento do resultado em uma variável
--- SET @resultado = calcular_pontuacao();
-
--- Exibição do resultado
--- SELECT @resultado AS Resultado;
-
--- update pontuacao_doador set pontos_latinhas = calcular_pontuacao() where id=1;
-
-
-
+-- select * from pontuacao;
 
 -- select * from pontuacao_doador;
 
 
+/*
+DELIMITER //
+CREATE FUNCTION calcular_pontuacao(id_usuario int) 
+RETURNS FLOAT	
+DETERMINISTIC
+BEGIN
+    DECLARE resultado int;
+    DECLARE qte_latas INT;
+    DECLARE pontos_latas INT;
+    
+    -- ------------------------------------------------------------------------------------------
+    SELECT SUM(quantidade_latinhas)  into qte_latas
+	FROM material_reciclado
+	INNER JOIN doador ON doador.id = material_reciclado.fk_id_doador
+	INNER JOIN cadastro_doador ON cadastro_doador.id = doador.fk_id_cadastro_doador
+	WHERE material_reciclado.fk_id_doador = id_usuario;
+
+	select pontuacao.pontos_doador_latinhas into pontos_latas from pontuacao;
+    -- ------------------------------------------------------------------------------------------
+        
+    set resultado = COALESCE(qte_latas, 1) * COALESCE(pontos_latas, 1) ;
+    
+    RETURN resultado;
+END //
+DELIMITER 
+*/
+
+-- SELECT calcular_pontuacao(1) AS resultado;
 
 
 
+-- --------------------- Seleção para somar todas itens da tabela MATERIAL_RECICLADO informando id do usuario ---------------------
+/*
+SELECT cadastro_doador.nome, material_reciclado.fk_id_doador, SUM(quantidade_latinhas)  as qte_latas
+FROM material_reciclado
+INNER JOIN doador ON doador.id = material_reciclado.fk_id_doador
+INNER JOIN cadastro_doador ON cadastro_doador.id = doador.fk_id_cadastro_doador
+WHERE material_reciclado.fk_id_doador = 5;
 
-
-
+select pontuacao.pontos_doador_latinhas as pontos_latas from pontuacao
+*/
+-- --------------------------------------------------------------------------------------------------------------------------------
 
